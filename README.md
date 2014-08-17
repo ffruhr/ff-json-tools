@@ -1,8 +1,11 @@
 ff-json-tools
 =============
+Collection of scripts to work and tamper with ff-related json files (ie. created by the [ffmap-backend](https://github.com/ffruhr/ffmap-backend)).  
+  
+_This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/._
 
-filter and merge nodes.json used by ffmap-d3
-
+#### nodes_filter.php
 
 Little PHP script to filter nodes.json used by [ffmap-d3](https://github.com/ffruhr/ffmap-d3).
 
@@ -11,8 +14,8 @@ With the filtered nodes.json you can create maps that represent your community l
 
 There are 3 vars you have to change for your needs:  
   `$src_url` source json file (output from ffmap-backend)  
-  `json_file` target json file (where ffmap-d3 reads from)  
-  `$filter_str` filter string (matched if string is _at the beginning_ of the nodes name)  
+  `$json_file` target json file (where ffmap-d3 reads from)  
+  `$filters_arr[]` array of filter strings (matched if string is _at the beginning_ of the nodes name)  
   
 For any further questions feel free to contact me!  
 Domnique Görsch <<ff@dgoersch.info>>
