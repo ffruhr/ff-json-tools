@@ -28,6 +28,18 @@ There are 3 vars you have to change for your needs:
   `$src_url` source json file (output from ffmap-backend)  
   `$json_file` target json file (where ffmap-d3 reads from)  
   `$filters_arr[]` array of filter strings (matched if string is _at the beginning_ of the nodes name)  
+
+
+#### nodes_merger.php
+
+Little PHP script to merge nodes.jsons from different domains used by [ffmap-d3](https://github.com/ffruhr/ffmap-d3).
+
+It takes the nodes.jsons from several domains created by the [ffmap-backend](https://github.com/ffruhr/ffmap-backend), parse them and join them together into one nodes.json with all nodes, links and clients.
+With the merged nodes.json you can create a map that represent all domains.
+
+There are 2 vars you have to change for your needs:  
+  `$src_urls[]` array with urls to source json files (output from ffmap-backend)  
+  `$json_file` target json file (where ffmap-d3 reads from)  
   
 
 For any further questions feel free to contact me!  
