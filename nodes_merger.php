@@ -12,7 +12,8 @@
 error_reporting(E_ALL ^ E_NOTICE);                                                           // suppress notices
 
 $src_urls    = array(
-//               "http://ffmap.freifunk-rheinland.net/nodes.json",
+               "http://map.freifunk-wuppertal.net/nodes.json",
+               "http://ffmap.freifunk-rheinland.net/nodes.json",
                "http://map.freifunk-ruhrgebiet.de/nodes.json",
                "http://moehne-vis.freifunk-rheinland.net/nodes.json"
                );                                                                            // source urls
