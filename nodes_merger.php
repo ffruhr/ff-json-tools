@@ -15,7 +15,8 @@ $src_urls    = array(
                "http://map.freifunk-wuppertal.net/nodes.json",
                "http://ffmap.freifunk-rheinland.net/nodes.json",
                "http://map.freifunk-ruhrgebiet.de/nodes.json",
-               "http://moehne-vis.freifunk-rheinland.net/nodes.json"
+               "http://moehne-vis.freifunk-rheinland.net/nodes.json",
+               "http://www.freifunk-karlsruhe.de/map/nodes.json"
                );                                                                            // source urls
 
 $json_file  = "/var/customers/webs/ffmg/map/all/nodes.json";                                 // target file
