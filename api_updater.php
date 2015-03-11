@@ -34,7 +34,7 @@ $lastchange   = date("Y-m-d\TH:i:s").".0000";                                   
 
 $api_template = file_get_contents($api_template_file);                                       // load api template
 $api_content  = str_replace('%%NODESCOUNTER%%',$counter,$api_template);                      // replace nodes counter
-$api_content  = str_replace('%%LASTCHANGE%%',$lastchange,$api_template);                     // and date string
+$api_content  = str_replace('%%LASTCHANGE%%',$lastchange,$api_content);                      // and date string
 
 file_put_contents($api_target_file,$api_content);                                            // output new api json
 
